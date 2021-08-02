@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    /*font-family: 'Arvo', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-brand {
+    margin-right: 10px;
+}
+
+.blackbook-logo {
+    height: 55px;
+    width: 55px;
+}
+
+.form-inline {
+    position: relative;
+}
+
+.form-inline input {
+    border-radius: 50px;
+    background: #3a3b3c;
+    border: none;
+    color: #a9a9a9;
+    padding-left: 40px;
+}
+
+.form-inline label {
+    position: absolute;
+    left: 15px;
+    color: #a9a9a9;
+}
+
+.navbar-nav .nav-item {
+    padding: 0 30px;
+}
+
+.nav-item .nav-link {
+    color: #a1a1a1 !important;
+    font-size: 20px;
+}
+
+.nav_use .nav-item {
+    padding: 0 5px;
+}
+
+.nav-item .user-img img {
+    margin: 0 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+}
+.nav-item .user-img {
+    font-size: 14px;
+}
+
+#side-menu {
+    width: 0%;
+}
