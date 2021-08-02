@@ -21,7 +21,6 @@
     <script async src="plugins/fontawesome-free-5.7.2/js/all.js"></script>   <!-- currently v5.7.2 -->
     <link rel="stylesheet" href="plugins/bootstrap-4.3.1/css/bootstrap.min.css">   <!-- currently v4.3 -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -37,7 +36,7 @@
             </a>
             <form class="form-inline my-2 my-lg-0">
                 <label for=""><i class="fas fa-search"></i></label>
-                <input class="form-control mr-sm-2" type="" placeholder="Search Facebook" aria-label="Search">
+                <input id="target" class="form-control mr-sm-2" type="" placeholder="Search Facebook" aria-label="Search">
             </form>
             <div class="collapse navbar-collapse" id="main-menu">
                 <ul class="navbar-nav m-auto">
@@ -75,7 +74,7 @@
                         <a class="nav-link" href="javascript:"><i class="far fa-bell"></i></a>
                     </li>
                     <li class="nav-item side-icon">
-                        <a class="nav-link" href="javascript:"><i class="fas fa-sort-down"></i></a>
+                        <a class="nav-link sort_down" href="javascript:"><i class="fas fa-sort-down"></i></a>
                     </li>
 
                 </ul>
@@ -86,8 +85,28 @@
 <!-- Add your site or application content here -->
 <!--<div class="container-fluid">-->
 
-
+<script src="js/jquery-3.1.1.min.js"></script>
 <script src="plugins/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".form-inline input").click(function(){
+            $(".navbar-brand .blackbook-logo").addClass("d-none");
+        });
+    });
+
+    $(document).ready(function(){
+        $( ".form-inline input" ).click(function() {
+            $( "#target" ).on( "focus" ); {
+                $(".navbar-brand .blackbook-logo").addClass("d-none");
+            }
+        });
+        $(".form-inline input").click(function(){
+            $(".navbar-brand .blackbook-logo").addClass("d-none");
+        });
+    });
+</script>
 
 </body>
 </html>
