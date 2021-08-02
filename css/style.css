@@ -13,15 +13,31 @@ body {
     padding: 0;
 }
 
+.navbar-brand {
+    margin-right: 10px;
+}
+
 .blackbook-logo {
     height: 55px;
     width: 55px;
+}
+
+.form-inline {
+    position: relative;
 }
 
 .form-inline input {
     border-radius: 50px;
     background: #3a3b3c;
     border: none;
+    color: #a9a9a9;
+    padding-left: 40px;
+}
+
+.form-inline label {
+    position: absolute;
+    left: 15px;
+    color: #a9a9a9;
 }
 
 .navbar-nav .nav-item {
@@ -39,10 +55,14 @@ body {
 
 .nav-item .user-img img {
     margin: 0 10px;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     border-radius: 50px;
 }
 .nav-item .user-img {
     font-size: 14px;
+}
+
+#side-menu {
+    width: 0%;
 }
